@@ -1,0 +1,47 @@
+Microsoft Windows [Version 10.0.22631.4317]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\lenovo\Desktop\myproject\Postgresql-Project>git status
+On branch test
+Your branch is up to date with 'origin/test'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    Project_1/Project1.sql
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Project_1/creating_tables
+        Project_1/inserting_values.sql
+        Project_1/inserting_valuess.sql
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\lenovo\Desktop\myproject\Postgresql-Project> git branch
+  main
+* test
+
+C:\Users\lenovo\Desktop\myproject\Postgresql-Project>git add .
+warning: in the working copy of 'Project_1/creating_tables', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Project_1/inserting_values.sql', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Project_1/inserting_valuess.sql', LF will be replaced by CRLF the next time Git touches it
+
+C:\Users\lenovo\Desktop\myproject\Postgresql-Project>git commit -m"added files"
+[test 3bc990b] added files
+ 3 files changed, 54 insertions(+)
+ rename Project_1/{Project1.sql => creating_tables} (100%)
+ create mode 100644 Project_1/inserting_values.sql
+ create mode 100644 Project_1/inserting_valuess.sql
+
+C:\Users\lenovo\Desktop\myproject\Postgresql-Project>git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 1.18 KiB | 604.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/AnanyaBillawaria/Postgresql-Project.git
+   a0a2901..3bc990b  test -> test
+
+C:\Users\lenovo\Desktop\myproject\Postgresql-Project>
